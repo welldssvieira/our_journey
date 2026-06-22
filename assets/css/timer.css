@@ -224,3 +224,40 @@ body {
     animation-duration: 60s;
     animation-direction: reverse;
 }
+
+/* Celulares pequenos */
+@media (max-width: 480px) {}
+
+/* Celulares grandes */
+@media (max-width: 576px) {}
+
+/* Tablets */
+@media (max-width: 768px) {
+}
+
+/* Notebooks */
+@media (max-width: 992px) {
+    .timer .texts h1 {
+        font-size: 30px;
+    }
+
+    .timer .texts p {
+        font-size: 15px;
+    }
+
+    .photo_item {
+        width: 200px;
+        height:300px;
+    }
+
+    .photo_item.he {
+        left: -60px;
+    }
+
+    photo_item.she {
+        left: -60px;
+    }
+}
+
+/* Monitores grandes */
+@media (max-width: 1200px) {}

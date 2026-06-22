@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
 
-background-image: url("../img/background/background_image.png");
+    background-image: url("../img/background/background_image.png");
     background-size: cover;
     background-position: center;
 }
@@ -130,7 +130,7 @@ background-image: url("../img/background/background_image.png");
 
 .galary_item:hover {
     transform: scale(2.05);
-    rotate:5deg ;
+    rotate: 5deg;
 }
 
 .galary_item img {
@@ -185,12 +185,12 @@ background-image: url("../img/background/background_image.png");
     right: 200px;
 }
 
-.main_title h1 > span {
+.main_title h1>span {
     position: relative;
     z-index: 1;
 }
 
-.main_title h1 > span::before {
+.main_title h1>span::before {
     content: "";
     position: absolute;
     left: -5px;
@@ -205,5 +205,64 @@ background-image: url("../img/background/background_image.png");
 @keyframes highlight {
     to {
         width: calc(100% + 10px);
+    }
+}
+
+
+/* Celulares pequenos */
+@media (max-width: 480px) {}
+
+/* Celulares grandes */
+@media (max-width: 576px) {}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .galary_item.primeira {
+        display: none;
+    }
+
+    .galary_item {
+        left: 150px;
+    }
+
+    #main_content h1 {
+        flex-wrap: wrap;
+    }
+
+    .main_title img {
+        display: none;
+    }
+
+    #main_content h1 {
+        font-size: 40px;
+    }
+
+    #main_content p {
+        font-size: 18px;
+    }
+}
+
+/* Notebooks */
+@media (max-width: 992px) {
+    .galary_item.segunda {
+        left: 104px;
+    }
+
+    .galary_item.terceira {
+        left: 15px;
+    }
+
+    .galary_item.quarta {
+        left: -50px;
+    }
+
+}
+
+/* Monitores grandes */
+@media (max-width: 1200px) {
+
+    #balao_esquerdo,
+    #balao_direito {
+        display: none;
     }
 }
