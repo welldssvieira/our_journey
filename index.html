@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Our Journey</title>
 </head>
 
 <body>
     <main id="main_content">
-        <section class="main_text">
+        <section class="main_text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 
             <div class="main_title">
                 <h1><span>Chegou o dia,</span> nosso dia ! </h1>
@@ -22,7 +24,7 @@
             <button class="main_button" onclick="window.location.href='assets/pages/timer.html'">Abrir</button>
         </section>
 
-        <section class="main_galary">
+        <section class="main_galary" data-aos="fade-down" data-aos-duration="1500">
             <section class="galary">
                 <img id="balao_esquerdo" src="assets/img/imagens/balao_coracao_grande_esquerdo.png"
                     alt="Um balão de coração.">
@@ -46,6 +48,10 @@
 
 
     <script src="/assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
