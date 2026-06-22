@@ -197,7 +197,7 @@ background-image: url("../img/background/background_image.png");
     bottom: 5px;
     width: 0;
     height: 40%;
-    background: #f44336;
+    background: rgba(237, 84, 76, 0.7);
     z-index: -1;
     animation: highlight 3s ease forwards;
 }
