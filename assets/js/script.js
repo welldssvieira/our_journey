@@ -1,5 +1,5 @@
 function updateTime() {
-    const dataInicial = new Date('2022-08-18T19:00:00');
+    const dataInicial = new Date('2023-08-18T19:00:00');
     const agora = new Date();
 
     const diferenca = agora - dataInicial;
