@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+::selection {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#main_content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_mat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    filter: blur(5px)
+}
+
+.mat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 20px;
+    width: max-content;
+
+    animation: slide 60s linear infinite;
+}
+
+.mat.nulo {
+    display: none;
+}
+
+.mat_item {
+    min-width: 300px;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #f44336;
+    margin: 20px;
+    flex-shrink: 0;
+
+}
+
+.mat_item img {
+    width: 320px;
+    height: 180px;
+    border-radius: 20px;
+    background-size: cover;
+    display: block;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo_item {
+    width: 300px;
+    height: 406px;
+    border-radius: 20px;
+    border: 2px solid #efefef;
+    overflow: hidden;
+}
+
+.photo_item img {
+    width: 300px;
+    height: 406px;
+    border-radius: 20px;
+    background-size: contain;
+}
+
+.photo_item.she {
+    transform: rotate(-15deg);
+    position: relative;
+    right: -40px;
+}
+
+.photo_item.he {
+    transform: rotate(15deg);
+    position: relative;
+    left: -40px;
+}
+
+.photos>.icone_coracao {
+    width: 80px;
+    height: 80px;
+    background-color: #efefef;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    bottom: -150px;
+
+}
+
+.photos>.icone_coracao img {
+    animation: scale 2s linear infinite;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    top: -250px;
+}
+
+.timer .texts {
+    text-align: center;
+}
+
+.timer .texts h1 {
+    font-size: 40px;
+    color: #322f2f;
+}
+
+.timer .texts p {
+    font-size: 20px;
+    color: #322f2f;
+    margin-top: 15px;
+}
+
+.timer_count_text {
+    font-size: 50px;
+    font-weight: 550;
+    color: #322f2f;
+}
+
+.timer_count {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.timer_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timer_item>div {
+    font-size: 60px;
+    font-weight: 800;
+    color: #322f2f;
+    margin-top: 10px;
+}
+
+.timer_item p {
+    font-size: 15px;
+    font-weight: 550;
+    color: #322f2f;
+    margin-top: 10px;
+}
+
+.teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teste>span {
+    margin-left: 20px;
+}
+
+/* Adiciona ":" em todos, exceto no último */
+.timer_item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -1.2rem;
+    top: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #322f2f;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-10%);
+    }
+}
+
+.mat:nth-child(1) {
+    animation-duration: 60s;
+}
+
+.mat:nth-child(2) {
+    animation-duration: 60s;
+    animation-direction: reverse;
+}
